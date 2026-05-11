@@ -21,7 +21,6 @@ This project consists of two main functional blocks:
 - **CSS3:** Custom styling, Flexbox layout, and styled scrollbars for a modern look.
 - **JavaScript (ES6+):** - **Fetch API:** To handle asynchronous HTTP requests using `.then()` chains.
     - **DOM Manipulation:** To dynamically render the currency list and update results.
-    - **Data Attributes:** Using `data-rate` to store and retrieve exchange rates efficiently.
 
 ## 📂 Project Structure
 - `index.html` — The main structure of the application.

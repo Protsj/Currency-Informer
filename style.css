@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f7f8fa;
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+    max-width: 1000px;
+    width: 100%;
+}
+
+.panel {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    padding: 30px;
+}
+
+.left-panel {
+    flex: 0 0 35%;
+    display: flex;
+    flex-direction: column;
+    max-height: 500px;
+}
+
+.panel-title {
+    text-align: center;
+    font-size: 1.3rem;
+    color: #2b3a4a;
+    margin-bottom: 25px;
+}
+
+.currency-list {
+    list-style: none;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
+/* Стилізація скролбару (як на макеті) */
+.currency-list::-webkit-scrollbar {
+    width: 6px;
+}
+.currency-list::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+    border-radius: 10px;
+}
+.currency-list::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 10px;
+}
+.currency-list::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+.currency-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 0.9rem;
+    color: #444;
+}
+
+.currency-item:last-child {
+    border-bottom: none;
+}
+
+.currency-name {
+    flex: 1;
+    padding-right: 15px;
+}
+
+.currency-rate {
+    white-space: nowrap;
+}
+
+.right-panel {
+    flex: 1;
+}
+
+.converter-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.converter-row input {
+    flex: 1;
+    padding: 10px 15px;
+    border: 1px solid #dcdcdc;
+    border-radius: 4px;
+    font-size: 0.95rem;
+    color: #333;
+    outline: none;
+    width: 100%;
+}
+
+.converter-row input:focus {
+    border-color: #a0a0a0;
+}
+
+.converter-row input[readonly] {
+    background-color: #ffffff;
+    color: #777;
+}
+
+.arrow {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.divider {
+    border: none;
+    border-top: 2px solid #e0e0e0;
+    margin-top: 30px;
+}

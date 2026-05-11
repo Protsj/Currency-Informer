@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NBU Currency Informer & Converter</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="container">
-        
+
         <div class="panel left-panel">
             <h2 class="panel-title">Exchange rates on <span id="current-date"></span></h2>
             <ul class="currency-list" id="currency-list">
@@ -33,6 +35,15 @@
                 <input type="number" id="amount-foreign-result" placeholder="Amount" readonly>
             </div>
 
+            <hr class="divider">
+
+            <div class="history-section">
+                <h3 id="history-title" class="panel-title">Exchange rate for the week</h3>
+                <div id="history-output">
+                    <p class="placeholder-text">Select a currency from the list on the left</p>
+                </div>
+            </div>
+
             <datalist id="currency-select"></datalist>
         </div>
 
@@ -40,4 +51,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>

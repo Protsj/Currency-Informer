@@ -39,6 +39,17 @@
 
             <div class="history-section">
                 <h3 id="history-title" class="panel-title">Exchange rate for the week</h3>
+                <div class="history-controls">
+                    <div class="date-input-group">
+                        <label for="start-date">From:</label>
+                        <input type="date" id="start-date">
+                    </div>
+                    <div class="date-input-group">
+                        <label for="end-date">To:</label>
+                        <input type="date" id="end-date">
+                    </div>
+                    <button id="fetch-history-btn" disabled>Show History</button>
+                </div>
                 <div id="history-output">
                     <p class="placeholder-text">Select a currency from the list on the left</p>
                 </div>

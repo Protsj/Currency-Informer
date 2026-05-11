@@ -137,7 +137,6 @@ body {
     margin-top: 20px;
 }
 
-/* Таблиця */
 .history-table {
     width: 100%;
     border-collapse: collapse;
@@ -162,4 +161,61 @@ body {
 
 .history-table th:last-child, .history-table td:last-child {
     text-align: right; 
+}
+
+.history-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 6px;
+    border: 1px solid #e9ecef;
+}
+
+.date-input-group {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.date-input-group label {
+    font-size: 0.9rem;
+    color: #495057;
+    font-weight: bold;
+}
+
+.history-controls input[type="date"] {
+    padding: 6px 10px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    font-family: inherit;
+    color: #495057;
+    outline: none;
+}
+
+.history-controls input[type="date"]:focus {
+    border-color: #80bdff;
+}
+
+.history-controls button {
+    padding: 7px 15px;
+    background-color: #1a365d;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+.history-controls button:hover:not(:disabled) {
+    background-color: #2a528a;
+}
+
+.history-controls button:disabled {
+    background-color: #a0aec0;
+    cursor: not-allowed;
 }

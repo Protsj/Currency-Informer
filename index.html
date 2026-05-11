@@ -1,36 +1,36 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Курс валют та Конвертер</title>
+    <title>NBU Currency Informer & Converter</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
         
         <div class="panel left-panel">
-            <h2 class="panel-title">Курс валют на <span id="current-date"></span></h2>
+            <h2 class="panel-title">Exchange rates on <span id="current-date"></span></h2>
             <ul class="currency-list" id="currency-list">
                 <li class="currency-item"></li>
             </ul>
         </div>
 
         <div class="panel right-panel">
-            <h2 class="panel-title">Конвертер валют</h2>
+            <h2 class="panel-title">Currency converter</h2>
 
             <div class="converter-row">
-                <input type="number" id="amount-foreign" placeholder="Сума" min="0">
-                <input list="currency-select" id="currency-input" placeholder="Виберіть валюту">
+                <input type="number" id="amount-foreign" placeholder="Amount" min="0">
+                <input list="currency-select" id="currency-input" placeholder="Select currency">
                 <span class="arrow">&rarr;</span>
-                <input type="number" id="amount-uah" placeholder="Гривні" readonly>
+                <input type="number" id="amount-uah" placeholder="Hryvnias" readonly>
             </div>
 
             <div class="converter-row">
-                <input type="number" id="amount-uah-input" placeholder="Гривні" min="0">
+                <input type="number" id="amount-uah-input" placeholder="Hryvnias" min="0">
                 <span class="arrow">&rarr;</span>
-                <input list="currency-select" id="currency-input-target" placeholder="Виберіть валюту">
-                <input type="number" id="amount-foreign-result" placeholder="Сума" readonly>
+                <input list="currency-select" id="currency-input-target" placeholder="Select currency">
+                <input type="number" id="amount-foreign-result" placeholder="Amount" readonly>
             </div>
 
             <datalist id="currency-select"></datalist>

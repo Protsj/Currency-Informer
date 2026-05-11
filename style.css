@@ -46,7 +46,6 @@ body {
     padding-right: 10px;
 }
 
-/* Стилізація скролбару (як на макеті) */
 .currency-list::-webkit-scrollbar {
     width: 6px;
 }

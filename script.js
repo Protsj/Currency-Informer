@@ -13,7 +13,7 @@ fetch('https://bank.gov.ua/NBUStatService/v1/statdirectory/exchange?json')
             li.className = 'currency-item';
             li.innerHTML = `
                 <span class="currency-name">${currency.cc} - ${currency.txt}</span>
-                <span class="currency-rate">${currency.rate.toFixed(2)} грн</span>
+                <span class="currency-rate">${currency.rate.toFixed(2)} UAH</span>
             `;
             currencyList.appendChild(li);
 
@@ -26,10 +26,10 @@ fetch('https://bank.gov.ua/NBUStatService/v1/statdirectory/exchange?json')
         initConverters();
     })
     .catch(err => {
-        console.error('Помилка завантаження даних:', err);
+        console.error('Error loading data:', err);
         const currencyList = document.getElementById('currency-list');
         if (currencyList) {
-            currencyList.innerHTML = '<li class="currency-item" style="color: red;">Помилка завантаження даних.</li>';
+            currencyList.innerHTML = '<li class="currency-item" style="color: red;">Error loading data.</li>';
         }
     });
 
